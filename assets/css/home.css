@@ -1,0 +1,74 @@
+h1, h3 {
+    text-align: center;
+}
+
+.header-fluid{
+    background-color: gray;
+    padding: 10px;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    background-color: white;
+    max-width: 1025px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-3{
+    flex-basis: 33.3%;
+}
+
+.col-2{
+    flex-basis: 50%;
+}
+
+.col-2 img{
+    width: 100%;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.surah{
+    text-align: left;
+}
+
+table, th, td {
+    border:1px solid black;
+    padding: 10px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .col-3{
+        flex-basis: 50%;
+    }
+
+    .col-2{
+        flex-basis: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .col-3{
+        flex-basis: 100%;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+    }
+  }
